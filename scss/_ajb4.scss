@@ -1,0 +1,220 @@
+* { margin: 0; }
+
+html, body { 
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+	text-align: right;
+	// background: #CCBEB1;
+	padding-right: 30px;
+	background: rgba(0, 0, 0, 0.25);
+
+	ul {
+		padding: 10px 0 10px 0;
+	}
+
+	li {
+		display: inline;
+		margin: 0 5px;
+	}
+
+	a:first-child { margin-left: 0; }
+
+	a {
+		color: #ffeedd;
+		margin-left: 10px;			
+		font-size: 1.3em;
+	}
+
+	a:hover { 
+		color: #ffeedd;
+		border-bottom:2px solid #00DD95;
+		padding-bottom: 2px;
+	}
+
+	@media #{$small-only} {
+		ul { text-align: center; }
+		a { font-size: 1em; }
+		padding-right: 0;
+	}
+
+	@media #{$medium-only} {
+		ul { text-align: center; }
+	}
+}
+
+.contact-phone { 
+	float: left; 		
+	color: #ffeedd;
+	margin: 15px 22px;			
+	font-size: 1.7em;
+}
+
+#hero-panel {
+
+	background: url(../img/wood-panel2.jpg) repeat center center ;
+	background-position: center top;
+	padding: 0 0 10px 0;
+	margin: 0;
+	text-rendering: optimizeLegibility;
+
+
+	h1 {
+		margin-top: -20px;
+		text-align: center;
+		font-size: 5.4em;
+		color: #263944;
+		text-shadow:
+		    -1px -1px 0 #fff,
+		    1px -1px 0 #fff,
+		    -1px 1px 0 #fff,
+		    1px 1px 0 #fff; 
+	}
+
+	.subheading {
+		text-align: center;
+		color: #00DD95;
+		font-size: 2.1em;
+	}
+
+	@media #{$small-only} {
+		h1 { font-size: 3em; }
+		padding: 0;
+		.subheading { font-size: 1.1em;	}
+	}
+
+	@media #{$medium-only} {
+		h1 { font-size: 4em; }
+		.subheading { font-size: 2em;	}
+	}
+
+}
+
+#about {
+
+	padding-bottom: 50px;
+
+	h4 {
+		margin: 0 0 10px 0;
+		font-size: 1.3em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	.intro { font-weight: bold; }
+
+	.caption {
+		display: block;
+		padding: 10px 0 20px 0;
+		text-align: center;
+	}
+
+	ul.reasons { 
+		list-style-image:url('../img/tick.png'); 
+		line-height: 1.9; 
+		margin-bottom: 5px;
+		text-align: left;
+	}
+
+	ul.reasons li { 
+		width: 100%;
+		font-size: 1.3em;
+	}
+
+	h3 {
+		font-size: 1.7em;
+		color: #263944;
+		text-align: left;
+		margin: 20px;
+		text-align: center;
+	}
+
+}
+
+#centered-featured { 
+	text-align: center; 
+
+	img { margin-bottom: 10px; }
+}
+
+.centered { 
+	text-align: center; 
+}
+
+#services-body { margin-bottom: 50px; }
+
+.services, .contact { padding-top: 30px ; }
+
+.services-home { background-color: gray; margin: 40px;}
+
+.wrap { 
+
+	margin: 20px;
+
+	@media #{$small-only} {
+		width: 75%;
+		margin: 20px auto;
+		background: none;
+	}
+
+	@media #{$medium-only} {
+		width: 70%;
+		margin: 0 auto;
+		background: none;
+	}
+}
+
+.wrap p { 
+	padding-top: 20px; 
+}
+
+#gallery-body { padding: 30px 0 50px; }
+
+
+
+#gallery-body .columns { margin-bottom: 30px; }
+
+table { 
+	width: 100%;
+	border: 0;
+	background: none !important;
+
+	tr:nth-of-type(even) { background: none; }
+}
+
+.contact-phone-responsive {
+	text-align: center;
+	margin-top: 20px;
+	background: rgba(0, 0, 0, 0.25);
+	font-size: 1.6em !important;
+}
+
+footer {
+	position: relative;
+	clear:both;
+	padding: 20px 0;
+	border-top: 2px solid #E8E8E8;
+
+	// img { float: right; }
+
+	// h6 { text-align: left; padding: 7px 0; }
+
+	@media #{$small-only} {
+		img { display: block; margin: 0 auto; padding: 10px 0 15px; }
+		h6  { text-align: center; }
+	}
+
+
+} 
+
+.facebook-footer { 
+	float: right;
+
+	@media #{$small-only} {
+		float: none;
+	} 
+}
